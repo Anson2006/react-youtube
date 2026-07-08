@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { VIDEOS, CHANNELS, COMMENTS } from './mockData';
 
-const RAPIDAPI_KEY = import.meta.env.VITE_YOUTUBE_API_KEY;
+const RAPIDAPI_KEY = import.meta.env.VITE_YOUTUBE_API_KEY || import.meta.env.REACT_APP_RAPID_API_KEY;
 const GOOGLE_API_KEY = import.meta.env.VITE_GOOGLE_API_KEY;
 const IS_API_ACTIVE = !!(RAPIDAPI_KEY || GOOGLE_API_KEY);
 
